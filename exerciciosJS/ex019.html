@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aprovada</title>
+</head>
+<body>
+    <h1>Média Aprovada</h1>
+    <script>
+        let nota1 = Number(prompt("Me de a primeira nota: "))
+        let nota2 = Number(prompt("Me de a segunda nota: "))
+        let nota3 = Number(prompt("Me de a terceira nota: "))
+        let media = (nota1+nota2+nota3)/3
+        let aprovado =  media >= 7.0 ? document.write(`Você foi Aprovado com a nota ${media}`) : document.write(`Infelizmente você não foi aprovado, sua nota foi ${media}`)
+    </script>
+</body>
+</html>

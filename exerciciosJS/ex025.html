@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faltas</title>
+</head>
+<body>
+    <h1>Faltas</h1>
+    <script>
+        let faltas = Number(prompt("Me diga quantas faltas você está: "))
+        if (faltas < 5){
+            document.write("São poucas faltas, mas tome cuidado!")
+        } else if (faltas < 10) {
+            document.write("Suas faltas são muitas! tome cuidado")
+        } else if (faltas < 15) {
+            document,write("Está com serios riscos de reprovar! cuidado!!")
+        } else {
+            document.write("Infelizmente, está reprovado!")
+        }
+    </script>
+</body>
+</html>

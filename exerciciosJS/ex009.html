@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros e poupança</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Poupança e juros</h1>
+    <script>
+        let poupança = Number(prompt("Me diga o valor que será depositado na poupança: "))
+        let juros = Number(prompt("Agora me de o valor dos juros mensais: "))
+        let finalmontante = (poupança +(poupança * (juros / 100))) * 12
+        document.write(`O valor final depois de 12 meses com a taxa de juros sendo ${juros} é ${finalmontante.toFixed(2)}`)
+    </script>
+</body>
+</html>

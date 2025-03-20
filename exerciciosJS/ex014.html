@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <h1>Idade em anos, meses e dias</h1>
+    <script>
+        let idadea = Number(prompt("Me dia o ano que você nasceu: "))
+        let ano = new Date().getFullYear()
+        let idade = ano - idadea
+        let idademes = idade*12
+        let idadedia = idade * 365
+        document.write(`A sua idade em ano é: ${idade}, e meses é ${idademes}, e em dias é ${idadedia}`)
+    </script>
+</body>
+</html>

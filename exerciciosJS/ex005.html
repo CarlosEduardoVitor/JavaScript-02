@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desconto</h1>
+    <script>
+        let preço = Number(prompt("Me diga o preço do produto: "))
+        let quantidade = Number(prompt("Me diga a quantidade do produto: "))
+        let total = preço*quantidade
+        if (quantidade >= 10) {
+            document.write(`O valor a ser pago com 10% de desconto é ${total-(total/100*10)}`)
+        } else {
+            document.write(`O valor total é ${total}`)
+        }
+    </script> 
+</body>
+</html>
