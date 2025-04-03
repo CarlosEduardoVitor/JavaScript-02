@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel - Inicio</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <div style="color: white;" id="logo">
+                LOGO
+            </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="diarias.html" target="_blank">
+                                Diárias
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cadastro.html" target="_blank">
+                                Cadastro
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cadastro2.html" target="_blank">
+                                Segundo Cadastro
+                            </a>
+                        </li>
+                        <li>
+                            <a href="eventos.html" target="_blank">
+                                Eventos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buffet.html" target="_blank">
+                                Buffet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="auditorio.html" target="_blank">
+                                Auditório
+                            </a>
+                        </li>
+                        <li>
+                            <a href="reservas.html" target="_blank">
+                                Reservas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="postos.html" target="_blank">
+                                Postos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manutencao.html" target="_blank">
+                                Manutenção
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button>CADASTRO</button>
+        </header>
+        <section id="imgs">
+            <div id="overlay">
+                <img src="img/WhatsApp Image 2025-04-02 at 21.36.05.jpeg" alt="">
+            </div>
+        </section>
+    </main>
+    <script>
+      let nomeDoHotel = prompt("Qual o nome do hotel? ")
+        alert(`O nome do hotel é ${nomeDoHotel}`)
+        let usuario = prompt("Qual o nome do usuário")
+        let senha = Number(prompt("Qual a senha do usuário? "))
+        let texto = document.getElementById("texto-centro").innerHTML = `Seja bem-vindo! ${usuario} ao nosso hotel: ${nomeDoHotel}`
+
+        if (senha != 2678){
+            alert("Senha inválida!")
+        } else {
+            alert(`Seja bem-vindo ao hotel ${nomeDoHotel}! ${usuario}! É um imenso prazer`)
+        } 
+    </script>
+</body>
+</html>
