@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>média aritmética 2</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt('Digite o primeiro número (menor):'))
+        let n2 = parseInt(prompt('Digite o segundo número (maior):'))
+        let soma = 0
+        let quantidade = 0
+        
+        for (let media = n1; media <= n2; media++){
+            soma = soma + media
+            quantidade++
+        }
+
+        alert(`A média aritmética entre ${n1} e ${n2} é ${(soma/quantidade).toFixed(2)}`)
+    </script>
+</body>
+</html>

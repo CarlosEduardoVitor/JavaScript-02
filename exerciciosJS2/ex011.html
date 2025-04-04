@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dentro = 0
+        let fora = 0
+
+        for (let contagem = 1; contagem <= 10; contagem++){
+            let valor = parseInt(prompt(`Digite um número ${contagem} :`))
+
+            if (valor >= 24 && valor <= 42){
+                dentro++
+            } else {
+                fora++
+            }
+        }
+
+        document.write("Dentro: " + dentro + "<br>")
+        document.write("Fora: " + fora + "<br>")
+    </script>
+</body>
+</html>

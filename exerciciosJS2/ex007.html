@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota 2</title>
+</head>
+<body>
+    <script>
+        let nota1
+        let nota2
+        let nota3
+        let nota4
+        let nota5
+        let nota6
+
+        do {
+            nota1 = parseFloat(prompt('Digite a primeira nota (0 a 10):'))
+        } while (nota1 < 0 || nota1 > 10)
+        do {
+            nota2 = parseFloat(prompt('Digite a segunda nota (0 a 10):'))
+        } while (nota2 < 0 || nota2 > 10)
+        do {
+            nota3 = parseFloat(prompt('Digite a terceiro nota (0 a 10):'))
+        } while (nota3 < 0 || nota3 > 10)
+        do {
+            nota4 = parseFloat(prompt('Digite a quarta nota (0 a 10):'))
+        } while (nota4 < 0 || nota4 > 10)
+        do {
+            nota5 = parseFloat(prompt('Digite a quinta nota (0 a 10):'))
+        } while (nota5 < 0 || nota5 > 10)
+        do {
+            nota6 = parseFloat(prompt('Digite a sexta nota (0 a 10):'))
+        } while (nota6 < 0 || nota6 > 10)
+
+        document.write(`A média é ${((nota1+nota2+nota3+nota4+nota5+nota6)/6).toFixed(2)}`)
+    </script>
+</body>
+</html>

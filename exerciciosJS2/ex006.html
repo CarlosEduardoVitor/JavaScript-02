@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota</title>
+</head>
+<body>
+    <script>
+    let alunos = 0
+    let repetir
+
+    do {
+        let nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"))
+        let nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"))
+        let media = (nota1+nota2)/2
+        document.write(`A média é ${media.toFixed(2)} `)
+
+        if (media >= 9.5) {
+        document.write("Aluno APROVADO!<br>")
+        alunos++
+        } else {
+        document.write("Aluno REPROVADO!<br>")
+        }
+
+        repetir = prompt("Calcular a média de outro aluno? S/N").toUpperCase()
+        document.write("<br>")
+
+    } while (repetir === "S")
+
+    document.write("Quantidade de alunos aprovados: " + alunos)
+    </script>
+</body>
+</html>

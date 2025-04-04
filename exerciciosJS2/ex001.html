@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+</head>
+<body>
+    <script>
+        let n1 = Number(prompt('Digite o primeiro número: '))
+        let n2
+
+        do {
+            n2 = Number(prompt('Digite o segundo número (deve ser maior que 0):'))
+            if (n2 <= 0){
+                alert('Esse valor é inválido! Por favor insira outro número!')
+            }
+        } while (n2 <= 0)
+
+        alert(`O resultado da divisão é ${(n1/n2).toFixed(2)}`)
+    </script>
+</body>
+</html>
